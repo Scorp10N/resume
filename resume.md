@@ -54,13 +54,6 @@ Remote / Israel
 
 ---
 
-## Education
-
-**Computer Science & Chemistry**
-September 1997 – June 2000
-
----
-
 ---
 
 ## Projects
