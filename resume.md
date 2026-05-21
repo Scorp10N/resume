@@ -1,6 +1,8 @@
 # Yarin M
 
-**Information Security Engineer | Security Architect | Security Consultant**
+*Information Security · AI Security*
+
+**Lead Engineer | Architect | Consultant | Builder | Mentor | Learner**
 
 yarin@scorp.solutions · [linkedin.com/in/cyberquantumcat](https://linkedin.com/in/cyberquantumcat) · [github.com/Scorp10N](https://github.com/Scorp10N)
 
