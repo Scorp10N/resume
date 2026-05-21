@@ -100,6 +100,13 @@ GitOps-backed security state store aggregating automated scan findings and postu
 | **Programming** | Python, Node.js, Golang, Java, TypeScript, PowerCLI |
 | **Virtualization & Databases** | VMware, Hyper-V, Docker, Kubernetes, QEMU, PostgreSQL, MySQL, MongoDB, Elasticsearch |
 
+## Languages
+
+| Language | Level |
+|---|---|
+| Hebrew | Native |
+| English | Professional |
+
 ## Currently Building
 
 AI Security & Agentic Infrastructure: Secure self-hosted AI inference with OpenAI-compatible gateway and virtual key routing across providers; containerized MCP server fleet for agent tooling; zero-secret agent harness design using SOPS-encrypted secrets and RAM-backed tmpfs isolation; anti-detection headless browser automation for agentic security research; LLM threat modeling, agentic pipeline security (LangChain, LangGraph), Langfuse observability, LiteLLM, OpenTelemetry for AI
