@@ -55,7 +55,7 @@ Remote / Israel
 ## Education
 
 **Computer Science & Chemistry**
-September 2000 – June 2003
+September 1997 – June 2000
 
 ---
 
