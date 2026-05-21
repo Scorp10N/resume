@@ -63,13 +63,30 @@ September 1997 – June 2000
 
 ## Projects
 
-**ResumeForge** *(Python, Go, TypeScript, SvelteKit, FastAPI, PostgreSQL)*
-Open-source resume automation platform with AI tailoring, multi-format export, and GitHub Pages deploy.
+**SecOps Pipeline Platform** *(GitHub Actions, Trivy, TruffleHog, CodeQL, Semgrep, YAML)*
+Centralized reusable GitHub Actions security platform enforcing DevSecOps governance across consuming repositories via GitOps sync.
 
-- Built a polyglot platform: Python/FastAPI engine, Go/Cobra CLI+TUI, SvelteKit web frontend.
-- Implemented JWT auth, multi-user PostgreSQL backend, and GitHub Pages deploy pipeline.
+- Built reusable CI/CD security workflows covering secrets scanning (TruffleHog), container image scanning (Trivy), SAST (CodeQL, Semgrep), and CODEOWNERS enforcement.
+- Implemented supply chain security controls: signed commits, SLSA provenance, and pre-commit hook distribution at scale.
 
-https://github.com/Scorp10N/resumeforge
+**cvetool** *(Go, Claircore, SQLite, SARIF)*
+CVE scanner and vulnerability manager for filesystems, container images, and VMs with multi-format reporting.
+
+- Built on Claircore; produces plain-text, SARIF, and Clair-format reports for integration into CI/CD pipelines and security dashboards.
+- Supports local vulnerability database sync, enabling air-gapped scanning for regulated environments.
+
+**env-pilot** *(Python, YAML, Zero-Secret Access architecture)*
+Secure development environment orchestrator enforcing a zero-secret access model across human dotfiles, agent skills, and local stack components.
+
+- Designed and implemented least-privilege sandbox controls preventing agents from accessing SSH keys, SOPS keys, and GPG material.
+- Bridges dotfile management, agent rules, and local stack registry under a unified security policy.
+
+**Security Posture Store** *(GitOps, GitHub Actions, SOPS, age, SARIF, Semgrep, Trivy, TruffleHog)*
+GitOps-backed security state store aggregating automated scan findings and posture snapshots across the project portfolio.
+
+- CI pipelines push findings from 7 scanners (Semgrep, Trivy, TruffleHog, govulncheck, pip-audit, npm-audit, SARIF) into version-controlled state on every push — zero human intervention.
+- Daily posture snapshots roll up severity counts across tracked repositories, enabling trend tracking and drift detection over time.
+- Secrets managed with SOPS + age using a TPM-backed hardware key; private key sealed in the TPM chip and never written to disk.
 
 ---
 
@@ -90,4 +107,4 @@ https://github.com/Scorp10N/resumeforge
 
 ## Currently Building
 
-AI Security: LLM threat modeling, agentic pipeline security, LangChain, LangGraph, Langfuse, LiteLLM, OpenTelemetry for AI
+AI Security & Agentic Infrastructure: Secure self-hosted AI inference with OpenAI-compatible gateway and virtual key routing across providers; containerized MCP server fleet for agent tooling; zero-secret agent harness design using SOPS-encrypted secrets and RAM-backed tmpfs isolation; anti-detection headless browser automation for agentic security research; LLM threat modeling, agentic pipeline security (LangChain, LangGraph), Langfuse observability, LiteLLM, OpenTelemetry for AI

@@ -436,15 +436,48 @@
     <div class="section__heading">Projects</div>
     <div class="project">
       <div class="project__header">
-        ResumeForge
-        <span class="project__tech">(Python, Go, TypeScript, SvelteKit, FastAPI, PostgreSQL)</span>
+        SecOps Pipeline Platform
+        <span class="project__tech">(GitHub Actions, Trivy, TruffleHog, CodeQL, Semgrep, YAML)</span>
       </div>
-      <div class="project__description">Open-source resume automation platform with AI tailoring, multi-format export, and GitHub Pages deploy.</div>
+      <div class="project__description">Centralized reusable GitHub Actions security platform enforcing DevSecOps governance across consuming repositories via GitOps sync.</div>
       <ul class="project__bullets">
-        <li>Built a polyglot platform: Python/FastAPI engine, Go/Cobra CLI+TUI, SvelteKit web frontend.</li>
-        <li>Implemented JWT auth, multi-user PostgreSQL backend, and GitHub Pages deploy pipeline.</li>
+        <li>Built reusable CI/CD security workflows covering secrets scanning (TruffleHog), container image scanning (Trivy), SAST (CodeQL, Semgrep), and CODEOWNERS enforcement.</li>
+        <li>Implemented supply chain security controls: signed commits, SLSA provenance, and pre-commit hook distribution at scale.</li>
       </ul>
-      <div class="project__url">https://github.com/Scorp10N/resumeforge</div>
+    </div>
+    <div class="project">
+      <div class="project__header">
+        cvetool
+        <span class="project__tech">(Go, Claircore, SQLite, SARIF)</span>
+      </div>
+      <div class="project__description">CVE scanner and vulnerability manager for filesystems, container images, and VMs with multi-format reporting.</div>
+      <ul class="project__bullets">
+        <li>Built on Claircore; produces plain-text, SARIF, and Clair-format reports for integration into CI/CD pipelines and security dashboards.</li>
+        <li>Supports local vulnerability database sync, enabling air-gapped scanning for regulated environments.</li>
+      </ul>
+    </div>
+    <div class="project">
+      <div class="project__header">
+        env-pilot
+        <span class="project__tech">(Python, YAML, Zero-Secret Access architecture)</span>
+      </div>
+      <div class="project__description">Secure development environment orchestrator enforcing a zero-secret access model across human dotfiles, agent skills, and local stack components.</div>
+      <ul class="project__bullets">
+        <li>Designed and implemented least-privilege sandbox controls preventing agents from accessing SSH keys, SOPS keys, and GPG material.</li>
+        <li>Bridges dotfile management, agent rules, and local stack registry under a unified security policy.</li>
+      </ul>
+    </div>
+    <div class="project">
+      <div class="project__header">
+        Security Posture Store
+        <span class="project__tech">(GitOps, GitHub Actions, SOPS, age, SARIF, Semgrep, Trivy, TruffleHog)</span>
+      </div>
+      <div class="project__description">GitOps-backed security state store aggregating automated scan findings and posture snapshots across the project portfolio.</div>
+      <ul class="project__bullets">
+        <li>CI pipelines push findings from 7 scanners (Semgrep, Trivy, TruffleHog, govulncheck, pip-audit, npm-audit, SARIF) into version-controlled state on every push &mdash; zero human intervention.</li>
+        <li>Daily posture snapshots roll up severity counts across tracked repositories, enabling trend tracking and drift detection over time.</li>
+        <li>Secrets managed with SOPS + age using a TPM-backed hardware key; private key sealed in the TPM chip and never written to disk.</li>
+      </ul>
     </div>
   </section>
 
@@ -495,7 +528,7 @@
     </div>
     <div class="skills__exploring">
       <strong>Currently Building:</strong>
-      AI Security &mdash; LLM threat modeling, agentic pipeline security, LangChain, LangGraph, Langfuse, LiteLLM, OpenTelemetry for AI
+      AI Security &amp; Agentic Infrastructure &mdash; Secure self-hosted AI inference with OpenAI-compatible gateway and virtual key routing across providers; containerized MCP server fleet for agent tooling; zero-secret agent harness design using SOPS-encrypted secrets and RAM-backed tmpfs isolation; anti-detection headless browser automation for agentic security research; LLM threat modeling, agentic pipeline security (LangChain, LangGraph), Langfuse observability, LiteLLM, OpenTelemetry for AI
     </div>
   </section>
 
