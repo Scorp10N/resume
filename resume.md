@@ -1,6 +1,6 @@
 # Yarin M
 
-*Information Security · AI Security*
+*Cloud Security · AI Security · DevSecOps · Zero Trust · Threat Modeling · Security Architecture*
 
 **Lead Engineer | Architect | Consultant | Builder | Mentor | Learner**
 
